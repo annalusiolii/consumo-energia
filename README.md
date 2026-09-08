@@ -1,73 +1,139 @@
 # ⚡ Calculadora de Consumo de Energia
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+
 ![Status](https://img.shields.io/badge/Status-Concluído-brightgreen?style=for-the-badge)
 
-## 📌 Sobre o Projeto
+Este projeto foi desenvolvido como atividade prática de um programa de iniciação em tecnologia.
 
-A **Calculadora de Consumo de Energia** é uma aplicação simples desenvolvida em **Python** como parte de uma atividade prática de Iniciação em Tecnologia. 
+A proposta foi criar uma calculadora capaz de estimar o consumo mensal de energia elétrica de um aparelho eletrônico a partir de informações simples fornecidas pelo usuário.
 
-O objetivo do programa é ajudar os usuários a estimarem o gasto energético de seus aparelhos eletrônicos em casa de forma rápida e prática, além de exibir o valor estimado da conta ao final do mês.
-
----
-
-## 💡 Como funciona?
-
-O sistema solicita 3 informações simples do usuário:
-1. 🏷️ **Nome do aparelho** (ex: Geladeira)
-2. ⚡ **Potência em Watts** (ex: 150W)
-3. ⏱️ **Tempo de uso diário em horas** (ex: 10 horas)
-
-Com esses dados, o programa gera o consumo mensal estimado em **kWh** e calcula o custo financeiro em Reais.
+Além de calcular o consumo em kWh, também adicionei uma funcionalidade para estimar o custo mensal da energia com base em um valor fixo por kWh.
 
 ---
 
-## 🧮 Fórmulas Utilizadas
+## 🎯 Objetivo
 
-Para calcular o **Consumo Mensal (kWh)**:
-$$\text{Consumo Mensal} = \frac{\text{Potência (W)} \times \text{Horas/Dia} \times 30}{1000}$$
+O objetivo deste projeto é ajudar o usuário a entender melhor o gasto de energia dos aparelhos utilizados no dia a dia.
 
-Para calcular o **Custo Estimado (R$)**:
-$$\text{Custo Estimado} = \text{Consumo Mensal (kWh)} \times \text{Tarifa (R\$ 0,75)}$$
+Também foi uma oportunidade para praticar conceitos básicos de Python, como:
 
-> *Nota: Foi considerada uma taxa média fixa de R$ 0,75 por kWh.*
+- Entrada de dados
+- Variáveis
+- Operações matemáticas
+- Saída de dados formatada
+- Organização de projetos no GitHub
 
 ---
 
-## 💻 Como Executar o Programa
+## 🐍 Linguagem Utilizada
 
-Se quiser testar o projeto no seu computador, siga os passos abaixo no terminal:
+- Python 3
+
+---
+
+## 📐 Fórmula Utilizada
+
+O cálculo do consumo mensal é feito da seguinte forma:
+
+```text
+Consumo Mensal (kWh) =
+(Potência × Horas de Uso por Dia × 30) / 1000
+```
+
+### Exemplo
+
+```text
+Potência: 150W
+Uso diário: 10 horas
+
+(150 × 10 × 30) / 1000
+
+Resultado: 45 kWh/mês
+```
+
+---
+
+## 💰 Cálculo do Custo Estimado
+
+Para tornar o projeto mais completo, foi adicionado um cálculo de custo estimado utilizando o valor de:
+
+```text
+R$ 0,75 por kWh
+```
+
+Fórmula:
+
+```text
+Custo Estimado = Consumo Mensal × Valor do kWh
+```
+
+---
+
+## ▶️ Como Executar o Projeto
+
+Clone o repositório:
 
 ```bash
-# 1. Clone este repositório
-git clone [https://github.com/annalusiolii/consumo-energia.git](https://github.com/annalusiolii/consumo-energia.git)
+git clone https://github.com/seu-usuario/consumo-energia.git
+```
 
-# 2. Acesse a pasta do projeto
+Acesse a pasta:
+
+```bash
 cd consumo-energia
+```
 
-# 3. Execute o script em Python
-python3 app.py=== CALCULADORA DE CONSUMO DE ENERGIA ===
+Execute o programa:
 
+```bash
+python3 app.py
+```
 
-## Exibição
+---
 
-Aparelho: Geladeira
-Potência (W): 150
-Uso diário (horas): 10
+## 🖥️ Exemplo de Execução
 
-----------------------------------------
+```text
+=== Calculadora de Consumo de Energia ===
+
+Digite o nome do aparelho: Geladeira
+Digite a potência do aparelho (W): 150
+Digite o tempo médio de uso diário (horas): 10
+
+===== Resultado =====
+
 Aparelho: Geladeira
 Consumo estimado: 45.00 kWh/mês
 Custo estimado: R$ 33.75
-----------------------------------------
+```
 
 ---
 
-### Como atualizar no terminal do seu Mac:
+## 📂 Estrutura do Projeto
 
-Depois de substituir o conteúdo no arquivo `README.md` (no VS Code ou no seu editor de texto), envie a atualização para o GitHub rodando estes 3 comandos no terminal:
+```text
+consumo-energia/
+│
+├── app.py
+└── README.md
+```
 
-```bash
-git add README.md
-git commit -m "docs: atualiza README.md com informacoes da autora e badges"
-git push
+---
+
+## ✨ O que aprendi com este projeto
+
+Durante o desenvolvimento deste projeto pude praticar:
+
+- Criação de programas em Python
+- Coleta de dados digitados pelo usuário
+- Realização de cálculos matemáticos
+- Organização de arquivos
+- Criação de documentação no GitHub
+- Uso básico do Git para versionamento
+
+---
+
+## 👩‍💻 Autora
+
+Desenvolvido por Anna Luiza Silvestre Oliveira como atividade de aprendizagem e prática em programação Python.
